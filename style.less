@@ -38,7 +38,9 @@ svg {
 		left: 50%;
 		top: 0;
 		position: absolute;
-		transition: transform 0.2s ease-out;
+		&.transition {
+			transition: transform 0.2s ease-out;
+		}
 		.dot {
 			border-radius: 100%;
 			background: white;
@@ -46,7 +48,7 @@ svg {
 			width: 20px;
 			height: 20px;
 			transform: translate(-50%, -50%);
-			box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+			box-shadow: 3px 0 6px rgba(0, 0, 0, 0.5);
 		}
 	}
 }
@@ -83,18 +85,19 @@ svg {
 	left: 50px;
 	background: rgb(255, 255, 255);
 	padding: 80px 30px 30px;
-
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 	h1 {
 		color: #002554;
 		font-size: 40px;
 		margin: 0;
 		font-family: ginger;
+		line-height: 1.2em;
 	}
 	p {
-		width: 180px;
-		font-size: 17px;
-		color: #5a5a5a;
-		font-family: sans-serif;
+		width: 220px;
+		font-size: 22px;
+		color: rgba(0, 36, 84, 0.6);
+		font-family: ginger;
 		margin: 10px 0 0;
 	}
 }
@@ -117,5 +120,6 @@ svg {
 		font-family: ginger;
 		font-size: 20px;
 		text-transform: uppercase;
+		border-radius: 35px;
 	}
 }
